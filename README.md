@@ -17,10 +17,10 @@
 ### Build order:
 - [x] Clear the boilerplate, set up Bootstrap
 - [x] Set up the data
-- [ ] Header section
-- [ ] About section
-- [ ] Skills section
-- [ ] Experience section
-- [ ] Projects section
-- [ ] Put it all together on the page
-- [ ] Final styling pass — spacing, colors, making it look good on mobile
+- [x] Header section
+- [x] About section
+- [x] Skills section
+- [x] Experience section
+- [x] Projects section
+- [x] Put it all together on the page
+- [x] Final styling pass — spacing, colors, making it look good on mobile
