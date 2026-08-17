@@ -24,3 +24,6 @@
 - [x] Projects section
 - [x] Put it all together on the page
 - [x] Final styling pass — spacing, colors, making it look good on mobile
+
+
+### To see the project (https://demo-cv-ochre.vercel.app/)
