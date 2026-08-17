@@ -1,0 +1,37 @@
+.header-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.header-subtitle {
+  animation-delay: 0.1s;
+}
+
+.header-name {
+  animation-delay: 0.3s;
+}
+
+.header-title {
+  animation-delay: 0.5s;
+}
+
+.header-description {
+  animation-delay: 0.7s;
+}
+
+.header-buttons {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

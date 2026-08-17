@@ -1,0 +1,67 @@
+.skills-item {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.animate-section .skills-item {
+  animation: skillsFadeUp 0.7s ease forwards;
+}
+
+.skills-heading {
+  animation-delay: 0.2s;
+}
+
+.skill-badge:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.skill-badge:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.skill-badge:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.skill-badge:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.skill-badge:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+.skill-badge:nth-child(6) {
+  animation-delay: 0.8s;
+}
+
+.skill-badge:nth-child(7) {
+  animation-delay: 0.9s;
+}
+
+.skill-badge:nth-child(8) {
+  animation-delay: 1s;
+}
+
+@keyframes skillsFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-badge .badge {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.skill-badge .badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}

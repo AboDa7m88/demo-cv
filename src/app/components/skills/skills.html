@@ -1,0 +1,43 @@
+<section id="skills" class="py-5 bg-light" appScrollAnimation>
+
+  <div class="container py-4">
+
+    <div class="text-center mb-5 skills-item skills-heading">
+      <p class="text-uppercase text-primary fw-semibold mb-2">
+        What I Work With
+      </p>
+
+      <h2 class="display-6 fw-bold mb-3">
+        Skills
+      </h2>
+
+      <p class="text-muted mb-0">
+        Technologies and tools I'm currently working with
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+
+          @for (skill of skills; track skill) {
+
+            <div class="skill-badge skills-item">
+
+              <span class="badge rounded-pill text-bg-dark px-4 py-3 fs-6">
+                {{ skill }}
+              </span>
+
+            </div>
+
+          }
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>

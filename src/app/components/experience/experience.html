@@ -1,0 +1,66 @@
+<section id="experience" class="py-5 bg-light" appScrollAnimation>
+
+  <div class="container py-4">
+
+    <div class="text-center mb-5 experience-item experience-heading">
+
+      <p class="text-uppercase text-primary fw-semibold mb-2">
+        My Journey
+      </p>
+
+      <h2 class="display-6 fw-bold mb-3">
+        Experience
+      </h2>
+
+      <p class="text-muted mb-0">
+        My professional and learning experience
+      </p>
+
+    </div>
+
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-8">
+
+        <div class="experience-timeline">
+
+          @for (experience of experiences; track experience.id) {
+
+            <div class="experience-entry experience-item">
+
+              <div class="experience-dot"></div>
+
+              <div class="experience-content">
+
+                <span class="badge text-bg-primary mb-2">
+                  {{ experience.period }}
+                </span>
+
+                <h4 class="fw-bold mb-1">
+                  {{ experience.role }}
+                </h4>
+
+                <h6 class="text-muted mb-3">
+                  {{ experience.company }}
+                </h6>
+
+                <p class="text-muted mb-0">
+                  {{ experience.description }}
+                </p>
+
+              </div>
+
+            </div>
+
+          }
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

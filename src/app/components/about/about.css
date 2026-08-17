@@ -1,0 +1,32 @@
+.about-item {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+.animate-section .about-item {
+  animation: aboutFadeUp 0.8s ease forwards;
+}
+
+.about-heading {
+  animation-delay: 0.2s;
+}
+
+.about-text-1 {
+  animation-delay: 0.5s;
+}
+
+.about-text-2 {
+  animation-delay: 0.8s;
+}
+
+@keyframes aboutFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

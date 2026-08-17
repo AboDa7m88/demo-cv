@@ -1,0 +1,78 @@
+<section id="projects" class="py-5" appScrollAnimation>
+
+  <div class="container py-4">
+
+    <div class="text-center mb-5 projects-item projects-heading">
+
+      <p class="text-uppercase text-primary fw-semibold mb-2">
+        What I've Built
+      </p>
+
+      <h2 class="display-6 fw-bold mb-3">
+        Projects
+      </h2>
+
+      <p class="text-muted mb-0">
+        A few projects I've built while developing my skills
+      </p>
+
+    </div>
+
+
+    <div class="row g-4">
+
+      @for (project of projects; track project.id) {
+
+        <div class="col-md-6 col-lg-4 projects-item">
+
+          <div class="card project-card h-100 border-0 shadow-sm">
+
+            <div class="card-body d-flex flex-column p-4">
+
+              <div class="project-number mb-3">
+                0{{ project.id }}
+              </div>
+
+              <h4 class="card-title fw-bold mb-3">
+                {{ project.title }}
+              </h4>
+
+              <p class="card-text text-muted mb-4">
+                {{ project.description }}
+              </p>
+
+
+              <div class="d-flex flex-wrap gap-2 mb-4">
+
+                @for (technology of project.technologies; track technology) {
+
+                  <span class="badge rounded-pill text-bg-light border">
+                    {{ technology }}
+                  </span>
+
+                }
+
+              </div>
+
+
+              <a
+                [href]="project.link"
+                class="btn btn-outline-dark mt-auto project-button"
+              >
+                View Project
+                <span class="ms-1">→</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>
