@@ -24,6 +24,30 @@
   animation-delay: 0.9s;
 }
 
+.profile-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+}
+
+.header-photo {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: photoSlideIn 0.8s ease forwards;
+}
+
+.header-buttons .btn {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.header-buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -33,5 +57,17 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes photoSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
